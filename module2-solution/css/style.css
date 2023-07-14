@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url("background.jpg");
+}
+.container{
+    display: flex;
+    width:100%;
+    margin: 10px;
+}
+.menu{
+    font-size: 30px;
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+    margin: 50px;
+}
+.box1{
+    margin: 10px;
+    border: solid black 1px;
+    background-color: azure;
+    width: 30%;
+}
+.box2{
+    margin: 10px;
+    border: solid black 1px;
+    background-color: azure;
+    width: 30%;
+}
+.box3{
+    margin: 10px;
+    border: solid black 1px;
+    background-color: azure;
+    width: 30%;
+}
+.top1{
+    float: right;
+    border: solid black 2px;
+    background-color: red;
+}
+.top2{
+    float: right;
+    border: solid black 2px;
+    background-color: blue;
+}
+.top3{
+    float: right;
+    border: solid black 2px;
+    background-color: greenyellow;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .box1 , .box2{
+        width:47%;
+    }
+    .box3{
+        width: 96.5%;
+    }
+
+}
+@media (max-width:767px) {
+    .container{
+    flex-direction: column ;
+    }
+    .box1, .box2, .box3{
+        width: 96%;
+    }
+}
